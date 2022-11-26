@@ -83,11 +83,12 @@ project "xengine"
     }
 
     includedirs {
-        "$(VULKAN_SDK)/Include",
+        -- "$(VULKAN_SDK)/Include",
     }
 
 	sysincludedirs {
         "/usr/local/include",
+        "External/volk",
         "External/VulkanMemoryAllocator/include",
         "External/glm",
         "External/sdl2/win64/include",
@@ -97,8 +98,8 @@ project "xengine"
     }
     
     libdirs { 
-        "$(VULKAN_SDK)/Lib",
-        "/usr/local/lib",
+        -- "$(VULKAN_SDK)/Lib",
+        -- "/usr/local/lib",
         "%{cfg.objdir}",
     }
     
@@ -134,7 +135,7 @@ project "xengine"
         }
     
 		links { 
-            "vulkan-1.lib",   
+            -- "vulkan-1.lib",   
             "ws2_32.lib",
             "winmm.lib",
             "sdl2.lib",
@@ -167,7 +168,7 @@ project "xengine"
             "Cocoa.framework",
             "CoreVideo.framework",
             "External/sdl2/macos/SDL2.framework",
-            "vulkan",
+            -- "vulkan",
         }
 
         embedAndSign  {

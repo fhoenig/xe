@@ -4,3 +4,6 @@
 [submodule "External/VulkanMemoryAllocator"]
 	path = External/VulkanMemoryAllocator
 	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
+[submodule "External/volk"]
+	path = External/volk
+	url = https://github.com/zeux/volk.git
